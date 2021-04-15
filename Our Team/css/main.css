@@ -7,5 +7,40 @@
 
 html, body {
   font-family: "Roboto", Arial, Helvetica, sans-serif;
+  color: #181818;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+img {
+  max-width: 100%;
+}
+
+header {
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+  position: relative;
+}
+
+header nav.navbar {
+  z-index: 100;
+  max-width: 1260px;
+  margin: 0 auto;
+}
+
+header nav.navbar .navbar-nav .nav-item {
+  padding: 0 50px 0 0;
+}
+
+header nav.navbar .navbar-nav .nav-item a.nav-link {
+  color: #181818;
+  font-size: 13px;
+  font-weight: 600;
+  padding: 0;
+}
+
+header .header__img {
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 /*# sourceMappingURL=main.css.map */

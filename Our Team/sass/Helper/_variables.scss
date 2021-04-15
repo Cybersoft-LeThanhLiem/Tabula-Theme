@@ -1,3 +1,23 @@
 // color
 $color-purple: #b61984;
-$color-black: #181818;
+$color-dark-1: #181818;
+
+// font-size
+$fs-1: 15px;
+$fs-2: 13px;
+
+// font-weight
+$fw-1: 400;
+$fw-2: 600;
+
+//break points
+$breakpoints: (
+    "extra-large": 1200px,
+    "large": 992px,
+    "medium": 768px,
+    "small": 576px,
+    "extra-large-down": 1199.98px,
+    "large-down": 991.98px,
+    "medium-down": 767.98px,
+    "small-down": 575.98px,
+);

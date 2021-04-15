@@ -6,4 +6,9 @@
 
 html, body {
     font-family: "Roboto", Arial, Helvetica, sans-serif;
+    @include styleText($color-dark-1, $fs-1, $fw-1);
+}
+
+img {
+    max-width: 100%;
 }
