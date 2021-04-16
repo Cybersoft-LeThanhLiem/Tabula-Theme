@@ -6,13 +6,43 @@ header {
         z-index: 100;
         max-width: 1260px;
         margin: 0 auto;
+        padding: 0 1rem;
 
-        .navbar-nav {
-            .nav-item {
-                padding: 0 50px 0 0;
-                a.nav-link {
-                    @include styleText($color-dark-1, $fs-2, $fw-2);
-                    padding: 0;
+        .navbar-brand {
+            width: 80px;
+        }
+
+        .navbar-collapse {
+            flex-grow: 0;
+            .navbar-nav {
+                .nav-item {
+                    padding: 0 50px 0 0;
+                    a.nav-link {
+                        @include styleText($color-dark-1, $fs-2, $fw-3);
+                        padding: 0;
+                        transition: all 100ms linear;
+                        &:hover {
+                            color: $color-purple;
+                        }
+                    }
+                }
+            }
+            .tel {
+                background-color: $color-purple;
+                border: 1px solid $color-purple;
+                border-radius: 50px;
+                padding: 0.8em 1.5em;
+                margin-right: 1rem;
+                @include styleText(white, 0.9rem, $fw-2);
+                transition: all 300ms ease;
+                &:hover {
+                    color: $color-purple;
+                    background-color: white;
+                }
+            }
+            .navbar-nav.social-icons {
+                .nav-item {
+                    padding: 0 15px 0 0;
                 }
             }
         }

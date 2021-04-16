@@ -25,17 +25,56 @@ header nav.navbar {
   z-index: 100;
   max-width: 1260px;
   margin: 0 auto;
+  padding: 0 1rem;
 }
 
-header nav.navbar .navbar-nav .nav-item {
+header nav.navbar .navbar-brand {
+  width: 80px;
+}
+
+header nav.navbar .navbar-collapse {
+  -webkit-box-flex: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0;
+}
+
+header nav.navbar .navbar-collapse .navbar-nav .nav-item {
   padding: 0 50px 0 0;
 }
 
-header nav.navbar .navbar-nav .nav-item a.nav-link {
+header nav.navbar .navbar-collapse .navbar-nav .nav-item a.nav-link {
   color: #181818;
   font-size: 13px;
   font-weight: 600;
   padding: 0;
+  -webkit-transition: all 100ms linear;
+  transition: all 100ms linear;
+}
+
+header nav.navbar .navbar-collapse .navbar-nav .nav-item a.nav-link:hover {
+  color: #b61984;
+}
+
+header nav.navbar .navbar-collapse .tel {
+  background-color: #b61984;
+  border: 1px solid #b61984;
+  border-radius: 50px;
+  padding: 0.8em 1.5em;
+  margin-right: 1rem;
+  color: white;
+  font-size: 0.9rem;
+  font-weight: 500;
+  -webkit-transition: all 300ms ease;
+  transition: all 300ms ease;
+}
+
+header nav.navbar .navbar-collapse .tel:hover {
+  color: #b61984;
+  background-color: white;
+}
+
+header nav.navbar .navbar-collapse .navbar-nav.social-icons .nav-item {
+  padding: 0 15px 0 0;
 }
 
 header .header__img {
