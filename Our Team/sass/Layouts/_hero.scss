@@ -1,0 +1,23 @@
+.hero {
+    font-family: "Montserrat", Arial, Helvetica, sans-serif;
+    position: relative;
+    .container {
+        position: relative;
+        .hero-left {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            h5 {
+                @include styleText($color-purple, $fs-3, $fw-3);
+            }
+            h1 {
+                @include styleText($color-dark-1, $fs-4, $fw-4);
+            }
+        }
+    }
+
+    .wave {
+        position: absolute;
+        bottom: -60px;
+    }
+}

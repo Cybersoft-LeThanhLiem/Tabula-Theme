@@ -16,6 +16,12 @@ img {
   max-width: 100%;
 }
 
+@media screen and (min-width: 992px) {
+  .container {
+    max-width: 1260px;
+  }
+}
+
 header {
   font-family: "Montserrat", Arial, Helvetica, sans-serif;
   position: relative;
@@ -81,5 +87,44 @@ header .header__img {
   position: absolute;
   top: 0;
   left: 0;
+}
+
+.hero {
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+  position: relative;
+}
+
+.hero .container {
+  position: relative;
+}
+
+.hero .container .hero-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.hero .container .hero-left h5 {
+  color: #b61984;
+  font-size: 16.5px;
+  font-weight: 600;
+}
+
+.hero .container .hero-left h1 {
+  color: #181818;
+  font-size: 54px;
+  font-weight: 700;
+}
+
+.hero .wave {
+  position: absolute;
+  bottom: -60px;
 }
 /*# sourceMappingURL=main.css.map */
