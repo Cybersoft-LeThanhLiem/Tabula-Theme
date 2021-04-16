@@ -127,4 +127,43 @@ header .header__img {
   position: absolute;
   bottom: -60px;
 }
+
+.teachers {
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+}
+
+.teachers .card {
+  border-radius: 10px;
+  width: 18rem;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+
+.teachers .card img {
+  border-radius: 10px 10px 0 0;
+}
+
+.teachers .card .nationality {
+  color: #b61984;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.teachers .card .name {
+  color: #181818;
+  font-size: 1.55rem;
+  font-weight: 700;
+}
+
+.teachers .card .card-text {
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  color: #181818;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.teachers .card:hover {
+  -webkit-box-shadow: -3px 11px 16px 0px rgba(145, 136, 145, 0.71);
+          box-shadow: -3px 11px 16px 0px rgba(145, 136, 145, 0.71);
+}
 /*# sourceMappingURL=main.css.map */
