@@ -1,9 +1,14 @@
 .teachers {
     font-family: "Montserrat", Arial, Helvetica, sans-serif;
+    background-color: $color-violet;
+    position: relative;
     .card {
+        z-index: 20;
         border-radius: 10px;
+        border: none;
         width: 18rem;
         transition: 0.5s all;
+        margin-top: 3rem;
         img {
             border-radius: 10px 10px 0 0;
         }
@@ -20,5 +25,10 @@
         &:hover {
             box-shadow: -3px 11px 16px 0px rgba(145,136,145,0.71);
         }
+    }
+
+    .white-wave {
+        position: absolute;
+        bottom: -5px;
     }
 }

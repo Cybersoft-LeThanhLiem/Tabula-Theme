@@ -92,6 +92,7 @@ header .header__img {
 .hero {
   font-family: "Montserrat", Arial, Helvetica, sans-serif;
   position: relative;
+  margin-bottom: 60px;
 }
 
 .hero .container {
@@ -130,13 +131,18 @@ header .header__img {
 
 .teachers {
   font-family: "Montserrat", Arial, Helvetica, sans-serif;
+  background-color: #dcd1f3;
+  position: relative;
 }
 
 .teachers .card {
+  z-index: 20;
   border-radius: 10px;
+  border: none;
   width: 18rem;
   -webkit-transition: 0.5s all;
   transition: 0.5s all;
+  margin-top: 3rem;
 }
 
 .teachers .card img {
@@ -165,5 +171,10 @@ header .header__img {
 .teachers .card:hover {
   -webkit-box-shadow: -3px 11px 16px 0px rgba(145, 136, 145, 0.71);
           box-shadow: -3px 11px 16px 0px rgba(145, 136, 145, 0.71);
+}
+
+.teachers .white-wave {
+  position: absolute;
+  bottom: -5px;
 }
 /*# sourceMappingURL=main.css.map */
