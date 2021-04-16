@@ -177,4 +177,108 @@ header .header__img {
   position: absolute;
   bottom: -5px;
 }
+
+.contact {
+  position: relative;
+  padding-top: 8rem;
+  padding-left: 6rem;
+}
+
+.contact .contact-content {
+  position: relative;
+  z-index: 20;
+}
+
+.contact .contact-content .contact-img {
+  padding-left: 10rem;
+}
+
+.contact .contact-content .contact-img img {
+  max-height: 550px;
+}
+
+.contact .contact-content .contact-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contact .contact-content .contact-form form {
+  background-color: #fff;
+  padding: 20px;
+  max-width: 400px;
+  border-radius: 15px;
+  border: 1px solid transparent;
+  -webkit-box-shadow: -3px 8px 11px 0px rgba(145, 136, 145, 0.71);
+          box-shadow: -3px 8px 11px 0px rgba(145, 136, 145, 0.71);
+}
+
+.contact .contact-content .contact-form form h1 {
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+  color: #181818;
+  font-size: 2.6rem;
+  font-weight: 700;
+}
+
+.contact .contact-content .contact-form form .form-content {
+  margin: 3rem 0 2rem;
+}
+
+.contact .contact-content .contact-form form .form-content .form-row {
+  width: 100%;
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.contact .contact-content .contact-form form .form-content input,
+.contact .contact-content .contact-form form .form-content select,
+.contact .contact-content .contact-form form .form-content textarea {
+  border-radius: 15px;
+  margin-bottom: 1.2rem;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.contact .contact-content .contact-form form .form-content .first-row {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.contact .contact-content .contact-form form .form-content .first-row input {
+  width: 45%;
+  padding: 1.2rem 0.75rem;
+}
+
+.contact .contact-content .contact-form form .form-content i {
+  color: #b61984;
+}
+
+.contact .contact-content .contact-form form .purple-btn {
+  margin-bottom: 2rem;
+}
+
+.contact .contact-wave {
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+}
+
+.purple-btn {
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+  border-radius: 50px;
+  background-color: #b61984;
+  color: white;
+  font-size: 0.8em;
+  font-weight: 600;
+  padding: 15px 60px;
+  border: 1px solid #b61984;
+}
+
+.purple-btn:hover {
+  color: #b61984;
+  background-color: #fff;
+}
 /*# sourceMappingURL=main.css.map */

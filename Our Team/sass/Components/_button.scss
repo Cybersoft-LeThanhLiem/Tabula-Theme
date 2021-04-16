@@ -1,0 +1,13 @@
+.purple-btn {
+    font-family: "Montserrat", Arial, Helvetica, sans-serif;
+    border-radius: 50px;
+    background-color: $color-purple;
+    @include styleText(white, 0.8em, $fw-3);
+    padding: 15px 60px;
+    border: 1px solid $color-purple;
+
+    &:hover {
+        color: $color-purple;
+        background-color: #fff;
+    }
+}

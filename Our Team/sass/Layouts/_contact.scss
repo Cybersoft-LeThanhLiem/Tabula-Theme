@@ -1,0 +1,70 @@
+.contact {
+    position: relative;
+    padding-top: 8rem;
+    padding-left: 6rem;
+    .contact-content {
+        position: relative;
+        z-index: 20;
+        .contact-img {
+            padding-left: 10rem;
+            img {
+                max-height: 550px;
+            }
+        }
+    
+        .contact-form {
+            display: flex;
+            align-items: center;
+            form {
+                background-color: #fff;
+                h1 {
+                    font-family: "Montserrat", Arial, Helvetica, sans-serif;
+                    @include styleText($color-dark-1, 2.6rem, $fw-4);
+                }
+                padding: 20px;
+                max-width: 400px;
+                border-radius: 15px;
+                border: 1px solid transparent;
+                box-shadow: -3px 8px 11px 0px rgba(145, 136, 145, 0.71);
+                .form-content {
+                    margin: 3rem 0 2rem;
+                    .form-row {
+                        width: 100%;
+                        margin-right: 0;
+                        margin-left: 0;
+                    }
+    
+                    input,
+                    select,
+                    textarea {
+                        border-radius: 15px;
+                        margin-bottom: 1.2rem;
+                        border: 1px solid rgba(0, 0, 0, 0.1);
+                    }
+    
+                    .first-row {
+                        justify-content: space-between;
+                        input {
+                            width: 45%;
+                            padding: 1.2rem 0.75rem;
+                        }
+                    }
+    
+                    i {
+                        color: $color-purple;
+                    }
+                }
+    
+                .purple-btn {
+                    margin-bottom: 2rem;
+                }
+            }
+        }
+    }
+
+    .contact-wave {
+        position: absolute;
+        bottom: -5px;
+        left: 0;
+    }
+}
