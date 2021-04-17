@@ -266,6 +266,119 @@ header .header__img {
   left: 0;
 }
 
+footer {
+  position: relative;
+}
+
+footer .row {
+  padding-top: 6rem;
+}
+
+footer .footer-col {
+  position: relative;
+  z-index: 20;
+}
+
+footer .footer-col h2.footer-title {
+  font-family: "Montserrat",Arial,Helvetica,sans-serif;
+  color: white;
+  font-size: 1.55rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+
+footer .footer-col .footer-content {
+  color: white;
+  font-size: 13px;
+  font-weight: 400;
+}
+
+footer .footer-col .footer-content ul {
+  list-style-type: none;
+}
+
+footer .footer-col .footer-content ul li {
+  margin-bottom: 1rem;
+}
+
+footer .footer-col .footer-content ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+footer .footer-col .footer-content ul li a:hover {
+  opacity: 0.8;
+}
+
+footer .footer-col .footer-content ul i {
+  margin-right: 1rem;
+}
+
+footer .footer-col .footer-content ul .social-icons li {
+  margin-right: 1rem;
+}
+
+footer .footer-col .footer-content .footer-form #footer-email {
+  padding: 1rem 2rem;
+  text-align: center;
+  background-color: transparent;
+  color: white;
+  border-radius: 30px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  outline: none;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  margin-bottom: 1rem;
+  width: 80%;
+}
+
+footer .footer-col .footer-content .footer-form #footer-email::-webkit-input-placeholder {
+  color: white;
+}
+
+footer .footer-col .footer-content .footer-form #footer-email:-ms-input-placeholder {
+  color: white;
+}
+
+footer .footer-col .footer-content .footer-form #footer-email::-ms-input-placeholder {
+  color: white;
+}
+
+footer .footer-col .footer-content .footer-form #footer-email::placeholder {
+  color: white;
+}
+
+footer .footer-col .footer-content .footer-form #footer-email:focus {
+  border: 1px solid white;
+}
+
+footer .footer-col .footer-content .footer-form .btn {
+  width: 80%;
+  color: #181818;
+  background-color: #fff;
+  border: 1px solid #fff;
+  font-size: 13px;
+}
+
+footer .footer-col .footer-content .footer-form .btn:hover {
+  color: #fff;
+  background-color: transparent;
+}
+
+footer .footer-col.has-bottom-border {
+  padding-right: 4rem;
+}
+
+footer .footer-col.has-bottom-border ul > li {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+footer .footer-wave {
+  position: absolute;
+  top: 0;
+  left: -60px;
+}
+
 .purple-btn {
   font-family: "Montserrat", Arial, Helvetica, sans-serif;
   border-radius: 50px;

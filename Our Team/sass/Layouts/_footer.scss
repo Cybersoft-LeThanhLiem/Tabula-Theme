@@ -1,0 +1,85 @@
+footer {
+    position: relative;
+    .row {
+        padding-top: 6rem;
+    }
+    .footer-col {
+        position: relative;
+        z-index: 20;
+        h2.footer-title {
+            font-family: "Montserrat",Arial,Helvetica,sans-serif;
+            @include styleText(white, 1.55rem, $fw-4);
+            margin-bottom: 2rem;
+        }
+
+        .footer-content {
+            @include styleText(white, $fs-2, $fw-1);
+            ul {
+                list-style-type: none;
+                li {
+                    margin-bottom: 1rem;
+                    a {
+                        color: white;
+                        text-decoration: none;
+                        &:hover {
+                            opacity: 0.8;
+                        }
+                    }
+                }
+                i {
+                    margin-right: 1rem;
+                }
+                .social-icons li {
+                    margin-right: 1rem;
+                }
+            }
+
+            .footer-form {
+                #footer-email {
+                    padding: 1rem 2rem;
+                    text-align: center;
+                    background-color: transparent;
+                    color: white;
+                    border-radius: 30px;
+                    border: 1px solid rgba(255, 255,255, 0.1);
+                    outline: none;
+                    transition: 0.5s all;
+                    margin-bottom: 1rem;
+                    width: 80%;
+                    &::placeholder {
+                        color: white;
+                    }
+    
+                    &:focus {
+                        border: 1px solid white;
+                    }
+                }
+
+                .btn {
+                    width: 80%;
+                    color: $color-dark-1;
+                    background-color: #fff;
+                    border: 1px solid #fff;
+                    font-size: 13px;
+                    &:hover {
+                        color: #fff;
+                        background-color: transparent;
+                    }
+                }
+            }
+        }
+
+        &.has-bottom-border {
+            padding-right: 4rem;
+            ul > li {
+                border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+            }
+        }
+    }
+
+    .footer-wave {
+        position: absolute;
+        top: 0;
+        left: -60px;
+    }
+}
