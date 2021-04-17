@@ -35,7 +35,7 @@ function renderUsers(userList) {
                 <td>${user.loaiND}</td>
                 <td class="text-center">
                     <button class="btn btn-warning">Sửa</button>
-                    <button class="btn btn-danger">Xóa</button>
+                    <button class="btn btn-danger" onclick="deleteUser('${id}')">Xóa</button>
                 </td>
             </tr>
         `;
@@ -61,7 +61,6 @@ function addUser() {
 
     userService.addUser(user)
         .then(function (result) {
-            console.log(result.data);
             getUserList();
 
             document.querySelector("#myModal .close").click();
@@ -69,4 +68,14 @@ function addUser() {
         .catch(function (error) {
             console.log(error);
         });
+}
+
+function deleteUser(id) {
+    userService.removeUser(id)
+    .then(function (result) {
+        getUserList();
+    })
+    .catch(function (error) {
+        console.log(error);
+    });
 }
