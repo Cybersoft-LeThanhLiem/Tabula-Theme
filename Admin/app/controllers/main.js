@@ -34,7 +34,7 @@ function renderUsers(userList) {
                 <td>${user.ngonNgu}</td>
                 <td>${user.loaiND}</td>
                 <td class="text-center">
-                    <button class="btn btn-warning">Sửa</button>
+                    <button class="btn btn-warning" onclick="getUser('${id}')">Sửa</button>
                     <button class="btn btn-danger" onclick="deleteUser('${id}')">Xóa</button>
                 </td>
             </tr>
@@ -74,6 +74,26 @@ function deleteUser(id) {
     userService.removeUser(id)
     .then(function (result) {
         getUserList();
+    })
+    .catch(function (error) {
+        console.log(error);
+    });
+}
+
+function getUser(id) {
+    userService.getUser(id)
+    .then(function (result) {
+        console.log(result.data);
+
+        $('#myModal').modal('show');
+        document.getElementById("TaiKhoan").value = result.data.taiKhoan;
+        document.getElementById("HoTen").value = result.data.hoTen;
+        document.getElementById("MatKhau").value = result.data.matKhau;
+        document.getElementById("Email").value = result.data.email;
+        document.getElementById("HinhAnh").value = result.data.hinhAnh;
+        document.getElementById("loaiNguoiDung").value = result.data.loaiND;
+        document.getElementById("loaiNgonNgu").selectedOptions[0].text = result.data.ngonNgu;
+        document.getElementById("MoTa").value = result.data.moTa;
     })
     .catch(function (error) {
         console.log(error);

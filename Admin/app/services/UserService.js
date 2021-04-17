@@ -26,4 +26,22 @@ function UserService() {
 
         return promise;
     }
+
+    this.getUser =function (id) {
+        var promise = axios({
+            method: 'get',
+            url: `https://60791b34e7f4f5001718532c.mockapi.io/user/${id}`
+        });
+
+        return promise;
+    }
+
+    this.updateUser = function (id) {
+        var promise = axios({
+            method: 'put',
+            url: `https://60791b34e7f4f5001718532c.mockapi.io/user/${id}`
+        });
+
+        return promise;
+    }
 }
