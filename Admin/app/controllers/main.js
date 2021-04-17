@@ -16,7 +16,7 @@ function getUserList() {
 document.getElementById("btnThemNguoiDung").addEventListener("click", function () {
     let footerEle = document.querySelector(".modal-footer");
     footerEle.innerHTML = `
-        <button class="btn btn-success">Thêm người dùng</button>
+        <button class="btn btn-success" onclick="addUser()">Thêm người dùng</button>
     `;
 });
 
@@ -33,7 +33,7 @@ function renderUsers(userList) {
                 <td>${user.email}</td>
                 <td>${user.ngonNgu}</td>
                 <td>${user.loaiND}</td>
-                <td>
+                <td class="text-center">
                     <button class="btn btn-warning">Sửa</button>
                     <button class="btn btn-danger">Xóa</button>
                 </td>
@@ -44,4 +44,29 @@ function renderUsers(userList) {
     });
 
     document.getElementById("tblDanhSachNguoiDung").innerHTML = result;
+}
+
+function addUser() {
+    let taiKhoan = document.getElementById("TaiKhoan").value;
+    let hoTen = document.getElementById("HoTen").value;
+    let matKhau = document.getElementById("MatKhau").value;
+    let email = document.getElementById("Email").value;
+    let hinhAnh = document.getElementById("HinhAnh").value;
+    let loaiND = document.getElementById("loaiNguoiDung").value;
+    let ngonNgu = document.getElementById("loaiNgonNgu").selectedOptions[0].text;
+    let moTa = document.getElementById("MoTa").value;
+
+    let user = new User(taiKhoan, hoTen, matKhau, email, loaiND, ngonNgu, moTa, hinhAnh);
+    console.log(user);
+
+    userService.addUser(user)
+        .then(function (result) {
+            console.log(result.data);
+            getUserList();
+
+            document.querySelector("#myModal .close").click();
+        })
+        .catch(function (error) {
+            console.log(error);
+        });
 }

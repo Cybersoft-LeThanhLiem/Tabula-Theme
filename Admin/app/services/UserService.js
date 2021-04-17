@@ -7,4 +7,14 @@ function UserService() {
 
         return promise;
     }
+
+    this.addUser = function (user) {
+        var promise = axios({
+            method: 'post',
+            url: 'https://60791b34e7f4f5001718532c.mockapi.io/user',
+            data: user
+        });
+
+        return promise;
+    }
 }
