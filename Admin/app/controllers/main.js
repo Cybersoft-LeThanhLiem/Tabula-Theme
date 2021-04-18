@@ -98,4 +98,29 @@ function getUser(id) {
     .catch(function (error) {
         console.log(error);
     });
+
+    document.querySelector("#myModal .modal-footer").innerHTML = `
+        <button class="btn btn-info" onclick="updateUser('${id}')">Cập nhật</button>
+    `
+}
+
+function updateUser(id) {
+    let taiKhoan = document.getElementById("TaiKhoan").value;
+    let hoTen = document.getElementById("HoTen").value;
+    let matKhau = document.getElementById("MatKhau").value;
+    let email = document.getElementById("Email").value;
+    let hinhAnh = document.getElementById("HinhAnh").value;
+    let loaiND = document.getElementById("loaiNguoiDung").value;
+    let ngonNgu = document.getElementById("loaiNgonNgu").selectedOptions[0].text;
+    let moTa = document.getElementById("MoTa").value;
+
+    let user = new User(taiKhoan, hoTen, matKhau, email, loaiND, ngonNgu, moTa, hinhAnh);
+    userService.updateUser(id, user)
+    .then(function (result) {
+        getUserList();
+        document.querySelector("#myModal .close").click();
+    })
+    .catch(function (error) {
+        console.log(error);
+    })
 }

@@ -36,10 +36,11 @@ function UserService() {
         return promise;
     }
 
-    this.updateUser = function (id) {
+    this.updateUser = function (id, user) {
         var promise = axios({
             method: 'put',
-            url: `https://60791b34e7f4f5001718532c.mockapi.io/user/${id}`
+            url: `https://60791b34e7f4f5001718532c.mockapi.io/user/${id}`,
+            data: user
         });
 
         return promise;
