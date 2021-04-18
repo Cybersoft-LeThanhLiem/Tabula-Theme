@@ -132,10 +132,12 @@
                         <div class="form-group">
                             <label>Tài khoản</label>
                             <input id="TaiKhoan" class="form-control" placeholder="Nhập vào tài khoản" />
+                            <span id="tbTaiKhoan" class="text-danger"></span>
                         </div>
                         <div class="form-group">
                             <label>Họ tên</label>
                             <input id="HoTen" class="form-control" placeholder="Nhập vào họ tên" />
+                            <span id="tbHoTen" class="text-danger"></span>
                         </div>
                         <div class="form-group">
                             <label>Mật khẩu</label>
@@ -202,11 +204,12 @@
     <script src="https://code.highcharts.com/highcharts.js"></script>
     <script src="https://code.highcharts.com/modules/series-label.js"></script>
     <script src="https://code.highcharts.com/modules/exporting.js"></script>
-    
+
     <!-- AXIOS JS -->
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script src="../models/User.js"></script>
     <script src="../services/UserService.js"></script>
+    <script src="../services/Validation.js"></script>
     <script src="../controllers/main.js"></script>
 </body>
 
